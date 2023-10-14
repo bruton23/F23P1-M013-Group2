@@ -88,8 +88,11 @@ def decode(fn="BinOutput.txt"):
     a.close()
     i = b.index(".")
     b = b[i+1:]
+    result = ""
     while len(b) > 0:
         binary_value, b = task3a(b)
+        result = result + task3b(binary_value)
+    return result
 
 # task 6: double-checks if original input and TextOutput are equal
 def task_6(s1: str, s2: str = "TextOutput.txt") -> bool:
