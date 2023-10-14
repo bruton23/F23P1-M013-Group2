@@ -69,7 +69,7 @@ def code(fn):
 
     BinStr = ''
     while (s != ''):  # Call the 'task_2' function to retrieve a binary value ('bVal')
-        bVal, s = getBin(s)
+        bVal, s = task_2(s)
         binStr = binStr +bVal
 
     numBits = len(binStr)  # Calculate the number of bits in the 'BinStr'
