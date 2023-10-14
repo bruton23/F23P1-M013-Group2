@@ -78,6 +78,7 @@ def code(fn):
     f = open("BinOutput.txt", "w+")
     f.write(binStr)  # Write the 'binStr' to the "BinOutput.txt" file
     f.close()
+    return len(binStr)
 
 
 # task 5
