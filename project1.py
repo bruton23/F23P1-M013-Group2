@@ -63,7 +63,7 @@ def task3b(bin_input):
 
 #task 4
 def code(fn):
-    f = open(fn, "rr")
+    f = open(fn, "r")
     s = f.read()
     f.close()
 
