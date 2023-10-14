@@ -67,8 +67,8 @@ def code(fn):
     s = f.read()
     f.close()
 
-    BinStr = ''
-    while (s != ''):  # Call the 'task_2' function to retrieve a binary value ('bVal')
+    binStr = ''
+    while s != '':  # Call the 'task_2' function to retrieve a binary value ('bVal')
         bVal, s = task_2(s)
         binStr = binStr +bVal
 
