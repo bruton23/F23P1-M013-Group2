@@ -84,7 +84,7 @@ def code(fn):
 
 def decode(fn="BinOutput.txt"):
     a = open(fn, "r")
-    b = a.read
+    b = a.read()
     a.close()
     i = b.index(".")
     b = b[i+1:] # Slice the 'b' string, removing everything before the first period.
