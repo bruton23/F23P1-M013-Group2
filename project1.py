@@ -87,7 +87,7 @@ def decode(fn="BinOutput.txt"):
     b = a.read
     a.close()
     i = b.index(".")
-    b = b[i+1:]
+    b = b[i+1:] # Slice the 'b' string, removing everything before the first period.
     result = ""
     while len(b) > 0:
         binary_value, b = task3a(b)
