@@ -80,6 +80,17 @@ def code(fn):
     f.close()
 
 
+# task 5
+
+def decode(fn="BinOutput.txt"):
+    a = open(fn, "r")
+    b = a.read
+    a.close()
+    i = b.index(".")
+    b = b[i+1:]
+    while len(b) > 0:
+        binary_value, b = task3a(b)
+
 # task 6: double-checks if original input and TextOutput are equal
 def task_6(s1: str, s2: str = "TextOutput.txt") -> bool:
     f1 = open(s1)
