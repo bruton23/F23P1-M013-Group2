@@ -55,8 +55,11 @@ def task3a(string1): # (function to convert text to list of binary)
 
 
 def task3b(bin_input):
-    bin_index = bins.index(bin_input)
-    converted_str = chars.value(bin_index)
+    try:
+        bin_index = bins.index(bin_input)
+        converted_str = chars[bin_index]
+    except:
+        converted_str = ""
     return converted_str
 
 
