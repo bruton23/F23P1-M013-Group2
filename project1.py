@@ -68,15 +68,15 @@ def code(fn):
     f.close()
 
     BinStr = ''
-    while (s != ''):
+    while (s != ''):  # Call the 'getBin' function to retrieve a binary value ('bVal')
         bVal, s = getBin(s)
         binStr = binStr +bVal
 
-    numBits = len(binStr)
-    binStr = str(numBits) + "." + binStr
+    numBits = len(binStr)  # Calculate the number of bits in the 'BinStr'
+    binStr = str(numBits) + "." + binStr  # update 'binStr' with the count
 
     f = open("BinOutput.txt", "w+")
-    f.write(binStr)
+    f.write(binStr)  # Write the 'binStr' to the "BinOutput.txt" file
     f.close()
 
 
