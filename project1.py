@@ -36,6 +36,30 @@ def task_2(p1: str):
                 bVal = bins[i]  # new variable with binary value of first character
                 return bVal, p1
 
+# Task 3
+
+''' This function inputs a string of binary values and returns the first binary value and the rest of the string'''
+
+
+def task3a(string1): # (function to convert text to list of binary)
+    if string1[0] == 0:	# (short characters start with 0)
+        result = string1[0:6]  # length of short string is 5
+        string1 = string1[6:]
+    elif string1[0] == 1:	# (long characters start with 1)
+        result = string1[0:8]  # length of long string is 7
+        string1 = string1[8:]
+    return result, string1
+
+
+''' This function inputs a binary value and returns the character for that binary value'''
+
+
+def task3b(bin_input):
+    bin_index = bins.index(bin_input)
+    converted_str = chars.value(bin_index)
+    return converted_str
+
+
 
 #task 4
 def code(fn):
