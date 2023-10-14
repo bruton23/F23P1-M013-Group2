@@ -37,6 +37,25 @@ def task_2(p1: str):
                 return bVal, p1
 
 
+#task 4
+def code(fn):
+    f = open(fn, "rr")
+    s = f.read()
+    f.close()
+
+    BinStr = ''
+    while (s != ''):
+        bVal, s = getBin(s)
+        binStr = binStr +bVal
+
+    numBits = len(binStr)
+    binStr = str(numBits) + "." + binStr
+
+    f = open("BinOutput.txt", "w+")
+    f.write(binStr)
+    f.close()
+
+
 # task 6: double-checks if original input and TextOutput are equal
 def task_6(s1: str, s2: str = "TextOutput.txt") -> bool:
     f1 = open(s1)
